@@ -1,0 +1,254 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background: rgb(245, 247, 248);
+}
+
+input[type=range] {
+    writing-mode: bt-lr; /* IE */
+    height: 10px;
+    width: 70px;
+    float:left;
+    padding: 3px;
+}
+
+input[type=text] {
+    width: 25px;
+}
+
+h3 {
+    padding: 10px;
+    margin: 0px;
+}
+
+#sointu-logo {
+    border: 1px solid rgb(0, 0, 0) !important;
+    float:left;
+    display:inline;
+    padding: 4.5px;
+    margin-top: 30.5px;
+    margin-left: -25px;
+    font-size: 10px;
+    background: rgb(255, 255, 255);
+    transform: rotate(-90deg);
+}
+
+#border-box {
+    border: 1px solid rgb(0, 0, 0) !important;
+    display:inline;
+    float:left;
+    padding: 5.2px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+#border-box-2 {
+    border: 1px solid rgb(0, 0, 0, 0.25) !important;
+    display:inline;
+    float:left;
+    padding: 5.2px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+}
+
+#full-width {
+    background: rgb(255, 255, 255);
+    border: 1px solid #000 !important;
+    position: absolute;
+    float:right;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+
+    padding: 20px;
+    margin-top: 5px;
+    margin-right: -10px;
+    width: 150px;
+    right: 0;
+}
+
+#full-width-r {
+    /*background: rgb(255, 255, 255);*/
+    /*border: 1px solid #000 !important;*/
+    
+    float:left;
+    left:50%;
+    padding: 10px;
+    margin: 5px;
+    margin-top: -10px;
+}
+
+#record-button {
+    font-size: 200px;
+}
+
+#download-button {
+    font-size: 200px;
+}
+
+#first-type {
+    font-size: 200px;
+}
+
+#second-type {
+    font-size: 200px;
+}
+
+#third-type {
+    font-size: 200px;
+}
+
+#fourth-type {
+    font-size: 200px;
+}
+
+#sustain {
+    margin-top: 20px;
+}
+
+#general-controls {
+    display: inline;
+    float: left;
+}
+
+#chord-text {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+#chord-text-2 {
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+#div1 {
+    float:left;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.clear{
+    clear:both;
+}
+
+.clear-r{
+    clear:initial;
+}
+
+#container-r{
+
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    width:10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    height: 10px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 0%;
+  }
+
+  .checkmark-2 {
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    height: 10px;
+    width: 20px;
+    background-color: rgb(100, 100, 100);
+    border-radius: 0%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: black;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark-2 {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark-2 {
+    background-color: black;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark-2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark-2:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark-2:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
